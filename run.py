@@ -6,6 +6,7 @@ import sys
 from subprocess import Popen, PIPE
 
 
+DEFAULT_CHANNEL = 'zilioner'
 CLIENT_ID = 'kimne78kx3ncx6brgo4mv6wki5h1ko'
 
 
@@ -60,7 +61,10 @@ if __name__ == '__main__':
     try:
        channel = sys.argv[1]
     except IndexError:
-       channel = 'zilioner'
+       channel = DEFAULT_CHANNEL
+
+    if not channel:
+        channel = DEFAULT_CHANNEL
 
     access_token = get_access_token(channel)
     playlist = get_playlist(channel, access_token)
