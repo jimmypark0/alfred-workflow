@@ -68,5 +68,5 @@ if __name__ == '__main__':
 
     access_token = get_access_token(channel)
     playlist = get_playlist(channel, access_token)
-    run_movist(playlist['chunked'])
+    run_movist(playlist['720p60'])
 

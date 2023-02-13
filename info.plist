@@ -84,22 +84,24 @@
 		<key>C3C3832B-7850-424F-8672-AE59CEA3DEAE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>280</integer>
+			<real>285</real>
 			<key>ypos</key>
-			<integer>150</integer>
+			<real>150</real>
 		</dict>
 		<key>EE701AB6-7440-4427-986F-5FE3FB82DC34</key>
 		<dict>
 			<key>xpos</key>
-			<integer>125</integer>
+			<real>125</real>
 			<key>ypos</key>
-			<integer>150</integer>
+			<real>150</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
