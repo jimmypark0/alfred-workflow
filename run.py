@@ -57,7 +57,7 @@ def run_movist(url):
     p.communicate(scpt.encode('utf-8'))
 
 
-if __name__ == '__main__':
+def main():
     try:
        channel = sys.argv[1]
     except IndexError:
@@ -70,3 +70,6 @@ if __name__ == '__main__':
     playlist = get_playlist(channel, access_token)
     run_movist(playlist['720p60'])
 
+
+if __name__ == '__main__':
+    main()
