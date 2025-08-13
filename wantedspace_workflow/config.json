@@ -1,0 +1,40 @@
+{
+  "api": {
+    "base_url": "https://api.wantedspace.ai/tools/openapi",
+    "timeout": 10,
+    "rate_limit": {
+      "requests_per_minute": 30,
+      "max_results_per_call": 50
+    }
+  },
+  "auth": {
+    "api_key": "",
+    "api_secret": "",
+    "user_agent": "Alfred-Wantedspace-Workflow/1.0"
+  },
+  "endpoints": {
+    "worktime_get": "/worktime/",
+    "worktime_post": "/worktime/",
+    "worktime_update": "/worktime/update_worktime/",
+    "worktime_delete": "/worktime/{email}/"
+  },
+  "default_user": {
+    "email": ""
+  },
+  "display": {
+    "date_format": "%Y-%m-%d",
+    "time_format": "%H:%M",
+    "show_team_info": true,
+    "show_approval_status": true,
+    "truncate_memo_length": 50
+  },
+  "workflow": {
+    "actions": {
+      "check_in": "출근",
+      "check_out": "퇴근", 
+      "away": "자리비움",
+      "view_today": "오늘 현황",
+      "view_date": "날짜별 조회"
+    }
+  }
+}
